@@ -1,9 +1,10 @@
 # Genetic Cars
-![Video of cars training]()
+![Video of cars training](https://raw.githubusercontent.com/giodestone/Genetic-Cars/main/Images/GIF1.gif)
+
 Genetic algorithm which evolves optimal 2D cars that can pass over rough terrain. Made for a module in my university course.
 
 ## Running
-[Download](TODO)
+[Download](https://github.com/giodestone/Genetic-Cars/releases)
 * W, A, S, D to look around.
 * Q, E to zoom in/out
 
@@ -34,10 +35,12 @@ The Run Benchmarks button performs benchmarks and its values are stored in a .cs
 Made in Unity 2019.3.0f3, though newer versions should work. Unity's 2D physics and renderer is used, and the logic is contained in partly detached code.
 
 ## How It Works
-![Image of car]()
+![Still from evolution](https://raw.githubusercontent.com/giodestone/Genetic-Cars/main/Images/Image1.jpg)
+
 Each of the cars' 'genes' are represented by an array of doubles using the `DNA` class. The fitness of the gene is determined by how far it has travelled and whether it tipped over (in which case its fitness is reduced and 'fitness 2' is selected). The least fit members are eliminated and best ones kept, then the genes are crossed over with each-other (random elements are spliced together) to create a new generation which is hopefully better than last.
 
 The cars are represented by a body and two wheels. The size of the body & wheels, position of wheels on body, speed of the wheels are affected by the gene.
 
-![Final Cars](TODO)
+![Final Cars](https://raw.githubusercontent.com/giodestone/Genetic-Cars/main/Images/Winning%20Cars.jpg)
+
 The evolutions continues until a car which reaches the goal is found. The algorithm should converge on a solution that looks plausible and is stable enough to cross the track.
